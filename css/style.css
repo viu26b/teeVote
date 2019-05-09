@@ -1,3 +1,39 @@
+body {
+  background-image: url(https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: contain;
+}
+.graph-display {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+.graph-display iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* iframe {
+  width: 50rem;
+  height: 31rem;
+} */
+a {
+  text-decoration: none;
+}
+.container {
+  background-color: white;
+  padding: 2em;
+  height: 100%;
+}
 img {
   height: 20rem;
+  padding: 1rem;
 }
