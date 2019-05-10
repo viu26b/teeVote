@@ -21,10 +21,10 @@ body {
   top: 0;
   width: 100%;
 }
-/* iframe {
+iframe {
   width: 50rem;
   height: 31rem;
-} */
+}
 a {
   text-decoration: none;
 }
@@ -32,6 +32,9 @@ a {
   background-color: white;
   padding: 2em;
   height: 100%;
+}
+.header {
+  opacity: 80%;
 }
 img {
   height: 20rem;
