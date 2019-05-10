@@ -11,10 +11,10 @@
 <body>
   <div class="container">
     <div class="header">
-      <a href="../index.html"><h1>TeeVote</h1></a>
-      <h3>Where YOU tell US what to watch!</h3>
+      <a href="../index.html"><h1 class="teevote">TeeVote</h1></a>
+      <h3 class="intro">Where <span class="teevote">YOU</span> tell <span class="teevote">US</span> what to watch!</h3>
     </div>
-    <div class="row">
+    <div id="index" class="row">
       <form action="" id="login-form">
         <div class="row">
           <div class="three columns"><label for="username">Username</label></div>
@@ -24,15 +24,17 @@
           <div class="three columns"><label for="usename">Password</label></div>
           <div class="nine columns u-full-width"><input type="password" name="password" id="password"></div>
         </div>
-        <div class="row">
+        <div  class="row">
           <div class="one-half column"><select name="" id="profile-select" class="x">
               <option value="admin">Admin</option>
               <option value="visit">Visitor</option>
             </select></div>
           <div class="one-half column"><input type="submit" value="Login" class="button-primary"></div>
+
         </div>
       </form>
       <a class="button" href="visitorHome.html">visitor home</a><a href="#"></a>
+      <a class="button" href="admin.html">admin home</a>
       </div>
   </div>
 </body>
