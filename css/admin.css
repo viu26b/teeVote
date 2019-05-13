@@ -62,3 +62,10 @@ a{
   background-color: rgb(219, 221, 221);
   text-align: center;
 }
+/*css for view graph begins*/
+.morty{
+  margin-top: .5rem;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 3px 3px 3px rgb(0, 156, 222);
+}
