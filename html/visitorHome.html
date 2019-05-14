@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="..\css\skeleton.css">
   <link rel="stylesheet" href="../css/visit.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <title>TeeVote: Visitor</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
       <div class="row visit"><h2>welcome<span id="visitor-name">Visitor</span></h2></div>
     <div class="header">
     <div class="row">
-      <div class="u-full- width column">
+      <div class="u-full-width column">
         <p class="welcome">Hey Visitor! Welcome to TeeVote. To get started browsing, choose a show either by category or by name and click "browse". To get more info on a show, click "get info".</p>
       </div>
     </div>
@@ -29,7 +30,7 @@
          </select>
        </div>
      <div class="one-third column"><label class="welcome" for="search-area">Search by Name</label>
-       <select class="u-full-width">
+       <select class="u-full-width" id="search-area">
          <option value="Option 1">N/A</option>
          <option value="Option 2">1. Game of Thrones</option>
          <option value="Option 3">2. Rick and Morty</option>
@@ -48,5 +49,24 @@
         </div>
     </div>
  </div>
+<script>
+ // $(function(){
+ //   // window.open("admin.html", '_top');
+ //   $('#search-area').change(function(){
+ //     var loginButton = document.querySelector("#login-button");
+ //     var profileSelect = document.querySelector("#profile-select");
+ //     //var profile = profileSelect.options[this.selectedIndex].value;
+ //
+ //
+ //     if(profileSelect.value == 'admin') {
+ //       $('#login-button').attr("href", "admin.html");
+ //     }
+ //     else if(profileSelect.value == 'visit') {
+ //       $('#login-button').attr("href", "visitorHome.html");
+ //     }
+ //   })
+ //
+ // });
+</script>
 </body>
 </html>
