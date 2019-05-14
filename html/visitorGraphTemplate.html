@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../css/skeleton.css">
   <link rel="stylesheet" href="../css/style.css">
-
+  <script src="../js/database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <title>View Graph</title>
 </head>
 <body>
@@ -17,11 +18,11 @@
     </div>
     <div class="u-cf row">
       <div class="nine columns">
-        <iframe seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=315762063&amp;format=image"></iframe>
+        <iframe seamless frameborder="0" scrolling="no" src=""></iframe>
       </div>
       <div class="three columns">
         <button class="u-full-width button-primary">print graph</button>
-        <button>age</button>
+        <button class='age-button'>age</button>
         <button>gender</button>
         <button>location</button>
         <button>comment</button>
@@ -42,13 +43,21 @@
       </div>
     </div>
     <div class="row">
-      <div class="nin columns">
-        <h4 class="u-pull-left">Graph<span>X</span></h4>
+      <div class="nine columns">
+        <h4 class="u-pull-left">Graph <span>X</span></h4>
+
         <p class="u-cf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam pariatur cumque laudantium fuga voluptatibus minus cum enim natus. Distinctio nam quibusdam, itaque provident nostrum eos id cumque veniam voluptatum sunt quos. Dolorem alias impedit iste quod, facilis nostrum rem! Eum.</p>
       </div>
     </div>
-
-
   </div>
+
+  <script>
+    $(function(){
+      $(".age-button").click(function(){
+        $("iframe").attr("src", teeVote_Pages[1].age_graph);
+
+      });
+    });
+  </script>
 </body>
 </html>

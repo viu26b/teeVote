@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../css/skeleton.css">
   <link rel="stylesheet" href="..\css\style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <title>TeeVote Login</title>
 </head>
 <body>
@@ -25,15 +26,36 @@
           <div class="nine columns u-full-width"><input type="password" name="password" id="password"></div>
         </div>
         <div  class="row">
-          <div class="one-third column"><select name="" id="profile-select" class="x">
+          <div class="one-third column">
+            <select name="" id="profile-select" class="x">
+              <option disabled selected value="default">-</option>
               <option value="admin">Admin</option>
               <option value="visit">Visitor</option>
-            </select></div>
-          <div class="one-third column"><input type="submit" value="V" class="button-primary"></div>
-          <div class="one-third column"><a href="admin.html"><input type="button" value="A" class="button"></a></div>
+            </select>
+          </div>
+          <div class="one-third column"><a href="#" id="login-button" class="button button-primary">Login</a></div>
         </div>
       </form>
       </div>
   </div>
+  <script>
+    $(function(){
+      // window.open("admin.html", '_top');
+      $('#profile-select').change(function(){
+        var loginButton = document.querySelector("#login-button");
+        var profileSelect = document.querySelector("#profile-select");
+        //var profile = profileSelect.options[this.selectedIndex].value;
+
+
+        if(profileSelect.value == 'admin') {
+          $('#login-button').attr("href", "admin.html");
+        }
+        else if(profileSelect.value == 'visit') {
+          $('#login-button').attr("href", "visitorHome.html");
+        }
+      })
+
+    });
+  </script>
 </body>
 </html>
