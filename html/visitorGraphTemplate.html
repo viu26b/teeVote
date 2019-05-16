@@ -16,32 +16,36 @@
       <a href="../index.html"><h1>TeeVote</h1></a>
       <h4 class="u-pull-right">welcome,<span class="visitor-name">Visitor</span></h4>
     </div>
-    <div class="u-cf row">
+    <div class="row u-cf u-full-width">
       <div class="nine columns">
-        <iframe seamless frameborder="0" scrolling="no" src=""></iframe>
-      </div>
-      <div class="three columns">
-        <button class="u-full-width button-primary">print graph</button>
-        <button class='age-button'>age</button>
-        <button>gender</button>
-        <button>location</button>
-        <button>comment</button>
+        <h4 class="u-pull-left">Stats for <span class='showname-span'>ShowX</span></h4>
+        <p class="u-cf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam pariatur cumque laudantium fuga voluptatibus minus cum enim natus. Distinctio nam quibusdam, itaque provident nostrum eos id cumque veniam voluptatum sunt quos. Dolorem alias impedit iste quod, facilis nostrum rem! Eum.</p>
       </div>
     </div>
+    <div class="row u-full-width">
+      <div class="four columns"><button class="u-full-width button-primary">print graph</button></div>
+      <div class="four columns">&nbsp</div>
+      <div class="four columns"><button class='u-full-width change-graph-button'>change graph</button></div>
+
+    </div>
     <div class="row">
-      <div class="nine columns">
-        <h4 class="u-pull-left">Graph<span>X</span></h4>
-        <p class="u-cf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam pariatur cumque laudantium fuga voluptatibus minus cum enim natus. Distinctio nam quibusdam, itaque provident nostrum eos id cumque veniam voluptatum sunt quos. Dolorem alias impedit iste quod, facilis nostrum rem! Eum.</p>
+      <div class="six columns">
+        <iframe id="gender-graph" seamless frameborder="0" scrolling="no" src=""></iframe>
+      </div>
+      <div class="six columns">
+        <iframe id="age-graph" seamless frameborder="0" scrolling="no" src=""></iframe>
       </div>
     </div>
 
     <div class="row">
-      <div class="nine columns">
-            <iframe seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=1726680548&amp;format=image"></iframe>
+      <div class="six columns">
+        <iframe id="sentiment-graph" seamless frameborder="0" scrolling="no" src=""></iframe>
       </div>
-      <div class="three columns">
+      <div class="six columns">
+        <iframe id="location-graph" seamless frameborder="0" scrolling="no" src=""></iframe>
       </div>
     </div>
+
     <div class="row">
       <div class="nine columns">
         <h4 class="u-pull-left">Graph <span>X</span></h4>
@@ -53,9 +57,20 @@
 
   <script>
     $(function(){
-      $(".age-button").click(function(){
-        $("iframe").attr("src", teeVote_Pages[1].age_graph);
+      var i = 0;
+      $(".change-graph-button").click(function(){
 
+        $("#gender-graph").attr("src", teeVote_Pages[1].gender_graph[i]);
+        $("#age-graph").attr("src", teeVote_Pages[1].age_graph[i]);
+        $("#sentiment-graph").attr("src", teeVote_Pages[1].sentiment_graph[i]);
+        $("#location-graph").attr("src", teeVote_Pages[1].location_graph[i]);
+
+        if (i == 0) {
+          i++;
+        }
+        else {
+          i = 0;
+        }
       });
     });
   </script>

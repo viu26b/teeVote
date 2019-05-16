@@ -4,9 +4,10 @@ teeVote_Pages = [
     category:'',
     year:'',
     info:'',
+    bacground:'https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_.jpg',
     age_graph:['',''],
     gender_graph:['',''],
-    comment_graph:['',''],
+    sentiment_graph:['',''],
     location_graph:['','']
   },
   {
@@ -17,7 +18,7 @@ teeVote_Pages = [
     age_graph:['https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=1998989893&amp;format=interactive','https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=902335982&amp;format=interactive'],
     //sample iframe src for later manipulation
     gender_graph:['https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=1325474852&amp;format=interactive','https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=1927736273&amp;format=interactive'],
-    comment_graph:['https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=761636259&amp;format=interactive','https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=732713002&amp;format=interactive'],
+    sentiment_graph:['https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=761636259&amp;format=interactive','https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=732713002&amp;format=interactive'],
     location_graph:['https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=361611351&amp;format=interactive','https://docs.google.com/spreadsheets/d/e/2PACX-1vTw98qhVpd5hsnbdMkiZ978Wva_W4izA9eP65FHGMzfQ1t0mKewQ8GLz5DcmoVVVa8NLF9rqo48S3dr/pubchart?oid=238359007&amp;format=interactive']
   }
 
