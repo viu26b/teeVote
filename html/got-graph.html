@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <script src="../js/database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <title>TeeVote</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      <a href="visitorBrowse.html"><img src="../images/got-logo.jpeg" alt="game of thrones logo" width="300"></a>
+        <button class="button-primary">print graph</button>
+        <button class='change-graph-button'>show graph</button>
+        </div>
+        </div>
+        <div class="row">
+          <div class="six columns">
+            <iframe id="gender-graph" seamless frameborder="0" scrolling="no" width="500" height="300" src=""></iframe>
+          </div>
+          <div class="six columns">
+            <iframe id="age-graph" seamless frameborder="0" scrolling="no" width="500" height="300" src=""></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="six columns">
+            <iframe id="sentiment-graph" seamless frameborder="0" scrolling="no" width="500" height="300" src=""></iframe>
+          </div>
+          <div class="six columns">
+            <iframe id="location-graph" seamless frameborder="0" scrolling="no" width="500" height="300" src=""></iframe>
+          </div>
+        </div>
+
+<script>
+  $(function(){
+    var i = 0;
+    $(".change-graph-button").click(function(){
+
+      $("#gender-graph").attr("src", teeVote_Pages[1].gender_graph[i]);
+      $("#age-graph").attr("src", teeVote_Pages[1].age_graph[i]);
+      $("#sentiment-graph").attr("src", teeVote_Pages[1].sentiment_graph[i]);
+      $("#location-graph").attr("src", teeVote_Pages[1].location_graph[i]);
+
+      if (i == 0) {
+        i++;
+      }
+      else {
+        i = 0;
+      }
+    });
+  });
+</script>
+<div class="container">
+      <div class="row">
+    <div class="twelve columns">
+      <button class="button-primary">add comment</button><br>
+      <textarea placeholder="write comment here.." rows="8" cols="80"></textarea><br>
+<iframe src="https://www.facebook.com/plugins/comment_embed.php?href=https%3A%2F%2Fwww.facebook.com%2FGameOfThrones%2Fposts%2F10156597016032734%3Fcomment_id%3D10156601605562734%26comment_tracking%3D%257B%2522tn%2522%253A%2522R%2522%257D&width=560&include_parent=false&height=135&appId" width="460" height="135" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://www.facebook.com/plugins/comment_embed.php?href=https%3A%2F%2Fwww.facebook.com%2FGameOfThrones%2Fposts%2F10156597016032734%3Fcomment_id%3D10156601623292734%26comment_tracking%3D%257B%2522tn%2522%253A%2522R%2522%257D&width=560&include_parent=false&height=115&appId" width="460" height="135" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+        </div>
+      </div>
+    </div>
+</body>
+</html>

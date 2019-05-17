@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <script src="../js/database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <title>TeeVote</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      <a href="visitorBrowse.html"><img src="../images/blue-planet-logo.jpg" alt="blue planet logo" width="150"></a>
+        <button class="button-primary">print graph</button>
+        <button class='change-graph-button'>show graph</button>
+        </div>
+        </div>
+        <div class="row">
+          <div class="six columns">
+            <iframe id="gender-graph" seamless frameborder="0" scrolling="no" width="500" height="300" src=""></iframe>
+          </div>
+          <div class="six columns">
+            <iframe id="age-graph" seamless frameborder="0" scrolling="no" width="500" height="300" src=""></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="six columns">
+            <iframe id="sentiment-graph" seamless frameborder="0" scrolling="no" width="500" height="300" src=""></iframe>
+          </div>
+          <div class="six columns">
+            <iframe id="location-graph" seamless frameborder="0" scrolling="no" width="500" height="300" src=""></iframe>
+          </div>
+        </div>
+
+<script>
+  $(function(){
+    var i = 0;
+    $(".change-graph-button").click(function(){
+
+      $("#gender-graph").attr("src", teeVote_Pages[1].gender_graph[i]);
+      $("#age-graph").attr("src", teeVote_Pages[1].age_graph[i]);
+      $("#sentiment-graph").attr("src", teeVote_Pages[1].sentiment_graph[i]);
+      $("#location-graph").attr("src", teeVote_Pages[1].location_graph[i]);
+
+      if (i == 0) {
+        i++;
+      }
+      else {
+        i = 0;
+      }
+    });
+  });
+</script>
+<div class="container">
+      <div class="row">
+    <div class="twelve columns">
+      <button class="button-primary">add comment</button><br>
+        <textarea placeholder="write comment here.." rows="8" cols="80"></textarea><br>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Falex.kersey.7%2Fposts%2F2178405888846149&width=500" width="500" height="367" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
